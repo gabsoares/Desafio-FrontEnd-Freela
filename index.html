@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Front End #01</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-container">
+            <h2 class="logo white">MeuFreela</h2>
+            <div class="navbar-links">
+                <!-- Linkedin SVG -->
+                <a class="items" href="https://www.linkedin.com/in/gavsoares/" target="_blank">
+                    <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTSA1IDMgQyAzLjg5NSAzIDMgMy44OTUgMyA1IEwgMyAxOSBDIDMgMjAuMTA1IDMuODk1IDIxIDUgMjEgTCAxOSAyMSBDIDIwLjEwNSAyMSAyMSAyMC4xMDUgMjEgMTkgTCAyMSA1IEMgMjEgMy44OTUgMjAuMTA1IDMgMTkgMyBMIDUgMyB6IE0gNSA1IEwgMTkgNSBMIDE5IDE5IEwgNSAxOSBMIDUgNSB6IE0gNy43NzkyOTY5IDYuMzE2NDA2MiBDIDYuOTIyMjk2OSA2LjMxNjQwNjIgNi40MDgyMDMxIDYuODMxNTc4MSA2LjQwODIwMzEgNy41MTc1NzgxIEMgNi40MDgyMDMxIDguMjAzNTc4MSA2LjkyMjM1OTQgOC43MTY3OTY5IDcuNjkzMzU5NCA4LjcxNjc5NjkgQyA4LjU1MDM1OTQgOC43MTY3OTY5IDkuMDY0NDUzMSA4LjIwMzU3ODEgOS4wNjQ0NTMxIDcuNTE3NTc4MSBDIDkuMDY0NDUzMSA2LjgzMTU3ODEgOC41NTAyOTY5IDYuMzE2NDA2MiA3Ljc3OTI5NjkgNi4zMTY0MDYyIHogTSA2LjQ3NjU2MjUgMTAgTCA2LjQ3NjU2MjUgMTcgTCA5IDE3IEwgOSAxMCBMIDYuNDc2NTYyNSAxMCB6IE0gMTEuMDgyMDMxIDEwIEwgMTEuMDgyMDMxIDE3IEwgMTMuNjA1NDY5IDE3IEwgMTMuNjA1NDY5IDEzLjE3MzgyOCBDIDEzLjYwNTQ2OSAxMi4wMzQ4MjggMTQuNDE4MTA5IDExLjg3MTA5NCAxNC42NjIxMDkgMTEuODcxMDk0IEMgMTQuOTA2MTA5IDExLjg3MTA5NCAxNS41NTg1OTQgMTIuMTE1ODI4IDE1LjU1ODU5NCAxMy4xNzM4MjggTCAxNS41NTg1OTQgMTcgTCAxOCAxNyBMIDE4IDEzLjE3MzgyOCBDIDE4IDEwLjk3NjgyOCAxNy4wMjM3MzQgMTAgMTUuODAyNzM0IDEwIEMgMTQuNTgxNzM0IDEwIDEzLjkzMDQ2OSAxMC40MDY1NjIgMTMuNjA1NDY5IDEwLjk3NjU2MiBMIDEzLjYwNTQ2OSAxMCBMIDExLjA4MjAzMSAxMCB6Ij48L3BhdGg+PC9zdmc+" />
+                </a>
+                <!-- Instagram SVG -->
+                <a class="items" href="https://www.instagram.com/gabriel_gvs07/" target="_blank">
+                    <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTSA4IDMgQyA1LjI0MyAzIDMgNS4yNDMgMyA4IEwgMyAxNiBDIDMgMTguNzU3IDUuMjQzIDIxIDggMjEgTCAxNiAyMSBDIDE4Ljc1NyAyMSAyMSAxOC43NTcgMjEgMTYgTCAyMSA4IEMgMjEgNS4yNDMgMTguNzU3IDMgMTYgMyBMIDggMyB6IE0gOCA1IEwgMTYgNSBDIDE3LjY1NCA1IDE5IDYuMzQ2IDE5IDggTCAxOSAxNiBDIDE5IDE3LjY1NCAxNy42NTQgMTkgMTYgMTkgTCA4IDE5IEMgNi4zNDYgMTkgNSAxNy42NTQgNSAxNiBMIDUgOCBDIDUgNi4zNDYgNi4zNDYgNSA4IDUgeiBNIDE3IDYgQSAxIDEgMCAwIDAgMTYgNyBBIDEgMSAwIDAgMCAxNyA4IEEgMSAxIDAgMCAwIDE4IDcgQSAxIDEgMCAwIDAgMTcgNiB6IE0gMTIgNyBDIDkuMjQzIDcgNyA5LjI0MyA3IDEyIEMgNyAxNC43NTcgOS4yNDMgMTcgMTIgMTcgQyAxNC43NTcgMTcgMTcgMTQuNzU3IDE3IDEyIEMgMTcgOS4yNDMgMTQuNzU3IDcgMTIgNyB6IE0gMTIgOSBDIDEzLjY1NCA5IDE1IDEwLjM0NiAxNSAxMiBDIDE1IDEzLjY1NCAxMy42NTQgMTUgMTIgMTUgQyAxMC4zNDYgMTUgOSAxMy42NTQgOSAxMiBDIDkgMTAuMzQ2IDEwLjM0NiA5IDEyIDkgeiI+PC9wYXRoPjwvc3ZnPg==" />
+                </a>
+                <!-- Twitter SVG -->
+                <a class="items" href="https://twitter.com/gabriel_gvs07" target="_blank">
+                    <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAyNCAyNCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTSA1IDMgQyAzLjg5NyAzIDMgMy44OTcgMyA1IEwgMyAxOSBDIDMgMjAuMTAzIDMuODk3IDIxIDUgMjEgTCAxOSAyMSBDIDIwLjEwMyAyMSAyMSAyMC4xMDMgMjEgMTkgTCAyMSA1IEMgMjEgMy44OTcgMjAuMTAzIDMgMTkgMyBMIDUgMyB6IE0gNSA1IEwgMTkgNSBMIDE5LjAwMTk1MyAxOSBMIDUgMTkgTCA1IDUgeiBNIDE0LjU2NjQwNiA3LjExMzI4MTIgQyAxMy4xOTQ0MDYgNy4xMTMyODEyIDEyLjA4MDA3OCA4LjIyODYwOTQgMTIuMDgwMDc4IDkuNTk5NjA5NCBDIDEyLjA4MDA3OCA5Ljg1NjYwOTQgMTIuMTY2MDE2IDEwLjAyODIxOSAxMi4xNjYwMTYgMTAuMTk5MjE5IEMgMTAuMTA5MDE2IDEwLjExNDIxOSA4LjMwOTM3NSA5LjA4NTkwNjMgNy4xMDkzNzUgNy42Mjg5MDYyIEMgNi44NTIzNzUgNy45NzE5MDYyIDYuNzY1NjI1IDguMzk5MTI1IDYuNzY1NjI1IDguODI4MTI1IEMgNi43NjU2MjUgOS42ODUxMjUgNy4xOTQ4NTk0IDEwLjM3MjY1NiA3Ljg4MDg1OTQgMTAuOTcyNjU2IEMgNy40NTI4NTk0IDEwLjg4NjY1NiA3LjEwODYyNSAxMC43OTk5MDYgNi43NjU2MjUgMTAuNjI4OTA2IEMgNi43NjU2MjUgMTEuODI4OTA2IDcuNjIyMzI4MSAxMi43NzIyOTcgOC43MzYzMjgxIDEzLjAyOTI5NyBDIDguNDc5MzI4MSAxMy4xMTUyOTcgOC4zMDc3ODEyIDEzLjExNTIzNCA4LjA1MDc4MTIgMTMuMTE1MjM0IEMgNy45NjQ3ODEzIDEzLjExNTIzNCA3Ljc5MjA5MzggMTMuMDI5Mjk3IDcuNjIxMDkzOCAxMy4wMjkyOTcgQyA3Ljk2NDA5MzcgMTMuOTcyMjk3IDguODIxNTQ2OSAxNC43NDIxODggOS45MzU1NDY5IDE0Ljc0MjE4OCBDIDkuMDc4NTQ2OSAxNS4zNDIxODcgNy45NjM2MDk0IDE1Ljc3MTQ4NCA2Ljg0OTYwOTQgMTUuNzcxNDg0IEwgNi4yNSAxNS43NzE0ODQgQyA3LjM2NCAxNi40NTY0ODQgOC42NTA0ODQ0IDE2Ljg4NjcxOSAxMC4wMjE0ODQgMTYuODg2NzE5IEMgMTQuNTY0NDg0IDE2Ljg4NjcxOSAxNy4wNTA3ODEgMTMuMTE0NDIyIDE3LjA1MDc4MSA5Ljg1NzQyMTkgTCAxNy4wNTA3ODEgOS41MTM2NzE5IEMgMTcuNDc5NzgxIDkuMTcwNjcxOSAxNy45MDY5NTMgOC43NDI1NjI1IDE4LjI1MTk1MyA4LjIyNjU2MjUgQyAxNy43Mzc5NTMgOC40ODQ1NjI1IDE3LjMwODkyMiA4LjU3MDI1IDE2Ljc5NDkyMiA4LjY1NjI1IEMgMTcuMzA4OTIyIDguMzE0MjUgMTcuNzM3MjAzIDcuODg1MTU2MiAxNy45MDgyMDMgNy4yODUxNTYyIEMgMTcuNDc5MjAzIDcuNTQyMTU2MiAxNi45NjUyMzQgNy43OTg3NjU2IDE2LjM2NTIzNCA3Ljg4NDc2NTYgQyAxNS45MzYyMzQgNy4zNzA3NjU2IDE1LjI1MjQwNiA3LjExMzI4MTIgMTQuNTY2NDA2IDcuMTEzMjgxMiB6Ij48L3BhdGg+PC9zdmc+" />
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="showcase-container">
+        <div class="showcase-items">
+            <p class="showcase-text pad-left white">Desenvolvedores prontos para ação</p>
+            <h1 class="showcase-title pad-left white">Seu projeto pronto na velocidade da luz</h1>
+            <a href="#btn-form" class="btn-tobottom white">Peça uma reunião</a>
+    </section>
+    <main>
+        <section class="about-container">
+            <div class="about-text margin">
+                <span class="headline" style="display: block;">Nossa iniciativa</span>
+                Somos desenvolvedores que se dedicam a fazer projetos perfeitos e entregar valor para todos os seus clientes. Gostamos de ver clientes satisfeitos com projetos feitos com carinho, atenção e qualidade altíssima.
+            </div>
+            <img class="about-image margin" src="./src/img/thinking-man.png" alt="Homem pensando">
+        </section>
+        <div class="clip-path"></div>
+    </main>
+    <form class="form-area" action="form.php">
+        <div class="form-container">
+            <div class="form-title">
+                <span class="headline">Mande um oi, ligamos para você!</span>
+                <p class="form-text">Preencha seus dados para que a gente possa entrar em contato.</p>
+            </div>
+        </div>
+        <div class="container-area">
+            <div class="form-name">
+                <p class="input-title">Nome Completo</p>
+                <input type="text" name="name" id="name" placeholder="Ex. Gabriel Visicatto Soares">
+            </div>
+            <div class="form-phone">
+                <p class="input-title">WhatsApp</p>
+                <input type="tel" name="tel" id="tel" placeholder="Ex. 16988376098">
+                <a id="btn-form" href="#">Peça uma reunião</a>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <p class="footer-text">Desafio 1 - front-end iniciante</p>
+        <p class="footer-text">Iniciativa <strong>Dev Hall</strong> </p>
+    </footer>
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

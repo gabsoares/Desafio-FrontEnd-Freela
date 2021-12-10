@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilo Navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 60px;
+  background: linear-gradient(to bottom, #ee5253, #d92223);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.items {
+  padding: 5px;
+}
+
+/* Estilos do showcase */
+.showcase-container {
+  height: 115vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.showcase-container {
+  background: url("../img/showcase.png") no-repeat center;
+  background-size: cover;
+  /* Overlay */
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: color;
+}
+
+.showcase-items {
+  margin-top: 60px;
+  padding: 30px;
+}
+
+.pad-left {
+  padding-left: 80px;
+}
+
+.white {
+  color: #fff;
+}
+
+.showcase-text {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+}
+
+.showcase-title {
+  width: 50%;
+  font-size: 3.8em;
+}
+
+.btn-tobottom {
+  display: inline-block;
+  background: tomato;
+  margin: 40px 0 0 85px;
+  padding: 15px 30px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  transition: 500ms ease;
+}
+
+.btn-tobottom:hover {
+  background: #ee5253;
+}
+
+/* Estilos do About */
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.headline {
+  font-size: 2.3em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.margin {
+  margin-top: 40px;
+}
+
+.about-text {
+  font-size: 1.2em;
+  width: 25%;
+  margin-right: 50px;
+}
+
+.about-image {
+  width: 15%;
+}
+
+.clip-path {
+  background: #eaeaea;
+  clip-path: polygon(0 69%, 100% 62%, 100% 82%, 0 82%);
+  height: 300px;
+  position: relative;
+  bottom: 220px;
+}
+
+/* Estilos formulário */
+.form-area {
+  height: 500px;
+}
+
+.form-title,
+.form-name,
+.form-phone {
+  display: inline-block;
+  position: relative;
+  left: 450px;
+}
+
+.form-title {
+  margin-top: 20px;
+}
+
+.form-text {
+  margin: 40px 0 30px 0;
+}
+
+.form-phone {
+  left: 500px;
+}
+
+.input-title,
+.input-text {
+  color: #000;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"] {
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  padding: 15px 60px;
+  text-align: left;
+}
+
+#btn-form {
+  background: #10ac84;
+  padding: 15px 60px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  transition: 500ms ease;
+  margin-left: 50px;
+  color: #fff;
+}
+
+/* Estilos footer */
+footer {
+  background: #eaeaea;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+strong {
+  text-transform: uppercase;
+}

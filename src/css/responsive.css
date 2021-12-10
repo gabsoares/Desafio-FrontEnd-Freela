@@ -1,0 +1,270 @@
+@media screen and (max-width: 1440px) {
+  .form-title,
+  .form-name,
+  .form-phone {
+    left: 338px;
+  }
+  .form-phone {
+    left: 388px;
+  }
+  input[type="text"],
+  input[type="tel"] {
+    padding: 10px 40px;
+  }
+  #btn-form {
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .showcase-text {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+  }
+
+  .showcase-title {
+    width: 80%;
+    font-size: 2.8em;
+  }
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-text {
+    width: 45%;
+  }
+  .about-image {
+    width: 25%;
+  }
+  .form-title,
+  .form-name,
+  .form-phone {
+    left: 130px;
+  }
+  .form-phone {
+    left: 150px;
+  }
+  input[type="text"],
+  input[type="tel"] {
+    padding: 10px 40px;
+  }
+  #btn-form {
+    padding: 10px 40px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .showcase-text {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+  }
+
+  .showcase-title {
+    width: 80%;
+    font-size: 1.9em;
+  }
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-text {
+    width: 53%;
+    font-size: 1.1em;
+  }
+  .about-image {
+    width: 25%;
+  }
+  .form-title,
+  .form-name,
+  .form-phone {
+    left: 50px;
+  }
+  .form-phone {
+    left: 70px;
+  }
+  input[type="text"],
+  input[type="tel"] {
+    padding: 10px 20px;
+  }
+  #btn-form {
+    padding: 10px 30px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-text {
+    width: 50%;
+    font-size: 1em;
+  }
+  .about-image {
+    width: 30%;
+  }
+  .form-title,
+  .form-name,
+  .form-phone {
+    left: 30px;
+  }
+  .form-phone {
+    left: 50px;
+  }
+  input[type="text"],
+  input[type="tel"] {
+    padding: 10px 20px;
+  }
+  #btn-form {
+    padding: 10px 30px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .showcase-text {
+    font-size: 1em;
+  }
+  .showcase-title {
+    font-size: 1.4;
+    width: 90%;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-text {
+    width: 70%;
+    font-size: 1em;
+    text-align: center;
+    margin-right: 0;
+  }
+  .about-image {
+    width: 38%;
+  }
+  .container-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-title {
+    text-align: center;
+  }
+  .headline {
+    font-size: 1.5em;
+  }
+  .form-title,
+  .form-name,
+  .form-phone {
+    position: static;
+    display: inherit;
+    flex-direction: column;
+  }
+  .input-title {
+    margin: 10px 0 10px 0;
+  }
+  input[type="tel"] {
+    margin-bottom: 15px;
+  }
+  #btn-form {
+    padding: 10px 10px;
+    margin-right: 18px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .showcase-text {
+    width: 80%;
+  }
+  .about-text {
+    font-size: 1.2em;
+  }
+  .about-image {
+    width: 100%;
+  }
+}
+/* Correções por bug */
+@media screen and (max-width: 1350px) {
+  .showcase-text {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+  }
+
+  .showcase-title {
+    width: 80%;
+    font-size: 2.8em;
+  }
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-text {
+    width: 45%;
+  }
+  .about-image {
+    width: 25%;
+  }
+  .form-title,
+  .form-name,
+  .form-phone {
+    left: 70px;
+  }
+  .form-phone {
+    left: 90px;
+  }
+  input[type="text"],
+  input[type="tel"] {
+    padding: 10px 40px;
+  }
+  #btn-form {
+    padding: 10px 40px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  .showcase-text {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+  }
+
+  .showcase-title {
+    width: 80%;
+    font-size: 2.8em;
+  }
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-text {
+    width: 45%;
+  }
+  .about-image {
+    width: 25%;
+  }
+  .form-title,
+  .form-name,
+  .form-phone {
+    left: 50px;
+  }
+  .form-phone {
+    left: 70px;
+  }
+  input[type="text"],
+  input[type="tel"] {
+    padding: 10px 30px;
+  }
+  #btn-form {
+    padding: 10px 30px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .clip-path {
+    height: 300px;
+  }
+}
