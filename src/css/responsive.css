@@ -267,4 +267,7 @@
   .clip-path {
     height: 300px;
   }
+  .about-image {
+    width: 45%;
+  }
 }
