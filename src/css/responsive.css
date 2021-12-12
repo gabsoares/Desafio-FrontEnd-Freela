@@ -264,11 +264,11 @@
   }
 }
 
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 650px) {
   .clip-path {
     height: 300px;
   }
   .about-image {
-    width: 45%;
+    width: 38%;
   }
 }

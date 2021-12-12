@@ -5,7 +5,7 @@
 
 O projeto **"Desafio Front End #01 - MeuFreela"** foi um desafio proposto por Mateus Ávila, para testar o conhecimento dos desenvolvedores front end do servidor, a fim de passar um feedback para que possamos melhorar nosso código. Estou muito feliz pelo resultado, vejam o código e visitem o site!
 
-<h1><a a href="https://desafio-frontend01-gabriel.netlify.app/" target="_blank">Acesse o site do desafio aqui</a></h1>
+<h1><a a href="https://site-gabriel-desafio01.netlify.app/" target="_blank">Acesse o site do desafio aqui</a></h1>
 
 ## Demonstração
 
