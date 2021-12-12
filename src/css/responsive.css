@@ -186,6 +186,7 @@
     width: 100%;
   }
 }
+
 /* Correções por bug */
 @media screen and (max-width: 1350px) {
   .showcase-text {
